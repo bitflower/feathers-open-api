@@ -1,12 +1,12 @@
 import OpenAPIClientAxios from 'openapi-client-axios';
 
 export const getApi = async ({
-  openApiSpecPath,
+  openApiSpecPath
 }: {
   openApiSpecPath: string;
 }) => {
   const api = new OpenAPIClientAxios({
-    definition: openApiSpecPath,
+    definition: openApiSpecPath
   });
   //   console.log(`BF API`, { api });
 
