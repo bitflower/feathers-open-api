@@ -10,6 +10,7 @@ export const getApi = async ({ openApiSpecPath }: GetApiOptions) => {
   });
 
   const client = await api.init();
+  // const client =  api.initSync();
 
   return client;
 };

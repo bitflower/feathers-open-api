@@ -14,7 +14,7 @@ const runMe = async () => {
   if (apiClient.api.getBaseURL()) {
     BASE_URL = apiClient.api.getBaseURL();
   }
-  console.log(`BF BASE URL`, apiClient.api.getBaseURL());
+  //   console.log(`BF BASE URL`, apiClient.api.getBaseURL());
 
   //   console.log(`BF PATHS`, apiClient.paths);
 
