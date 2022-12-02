@@ -4,6 +4,8 @@ import { setup } from './services';
 
 const SPEC_URL = 'https://api.apis.guru/v2/openapi.yaml';
 let BASE_URL = 'https://api.apis.guru/v2/';
+// const SPEC_URL = 'https://api.apis.guru/v2/openapi.yaml';
+// let BASE_URL = 'https://api.apis.guru/v2/';
 
 const app = feathers();
 
@@ -19,9 +21,10 @@ const main = async () => {
   //   app.service('list').on('created', (message: Message) => {
   //     console.log('A new message has been created', message);
   //   });
-
-  const messages = await app.service('list').find();
-  console.log('All messages', messages);
+  const operations = await app.service('openapi-host').find();
+  console.log('All operations', operations);
+  //   const apis = await app.service('list').find();
+  //   console.log('All apis', apis);
 };
 
 setTimeout(() => {

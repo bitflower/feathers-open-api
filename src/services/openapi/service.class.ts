@@ -1,11 +1,5 @@
 import { HttpMethod, UnknownOperationMethod } from 'openapi-client-axios';
 
-// This is the interface for the message data
-// interface Message {
-//   id?: number;
-//   text: string;
-// }
-
 type PathApi = {
   [method in HttpMethod]?: UnknownOperationMethod;
 };
