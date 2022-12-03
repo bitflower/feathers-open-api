@@ -4,6 +4,9 @@ type PathApi = {
   [method in HttpMethod]?: UnknownOperationMethod;
 };
 
+// TODO: This should be the ExternalREST Service !!
+// TODO: Each time this service is registered we should store it in `repos
+// TODO: use `adapter-commons`?
 export class OpenApiService {
   //   messages: Message[] = [];
   pathApi: PathApi;
