@@ -1,23 +1,35 @@
 {
-  "name": "open-api-to-feathers",
+  "name": "feathers-open-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/",
+  "types": "dist/",
+  "directories": {
+    "test": "test",
+    "src": "src"
+  },
+  "files": [
+    "src/**",
+    "dist/**"
+  ],
   "scripts": {
-    "run": "ts-node src/index.ts",
+    "compile": "shx rm -rf dist/ && tsc --build --force",
+    "run": "ts-node src/run.ts",
     "start": "ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matthias Max",
   "license": "ISC",
-  "devDependencies": {
-    "ts-node": "^10.9.1",
-    "tslib": "^2.4.1",
-    "typescript": "^4.9.3"
-  },
   "dependencies": {
+    "@feathersjs/errors": "^4.5.15",
     "@feathersjs/feathers": "^4.5.15",
     "axios": "^1.2.0",
     "openapi-client-axios": "^6.0.0"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
   }
 }
