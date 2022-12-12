@@ -1,4 +1,4 @@
-import { getApi } from './make-api';
+import { getApiClient } from './utils';
 
 const runMe = async () => {
   const SPEC_URL = 'https://api.apis.guru/v2/openapi.yaml';
@@ -7,7 +7,7 @@ const runMe = async () => {
   //   const SPEC_URL = 'es_swagger.json';
   //   let BASE_URL = 'https://api.apis.guru/v2/';
 
-  const apiClient = await getApi({
+  const apiClient = await getApiClient({
     openApiSpecPath: SPEC_URL
   });
 
