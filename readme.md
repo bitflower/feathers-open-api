@@ -53,6 +53,9 @@ The service `open-api-host` will be available to register APIs.
 
 ## Example
 
+This mounts the operation `getCarByID` on path `/cars/{cardId}` as service.
+
+> As the process of registering and mounting is async you may have to set up your `NotFound` middleware a bit differently or disable it altogether. For further info see [this](https://github.com/feathersjs/feathers/issues/402#issuecomment-244377447) GitHub thread.
 ### Register an API
 
 ```typescript
