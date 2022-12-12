@@ -151,7 +151,7 @@ console.log('Specification of my-api', myApiSpecs);
         }
     },
     "schemas": {
-        // json-schemas definitions (extracted from `components`)
+        // resolved* json-schema definitions (extracted from `components`)
     }
 }
  */
@@ -237,10 +237,10 @@ console.log('My car', car);
 
 ## Roadmap
 
-- [ ] User research reg. DX (e.g. Feathers Discord)
-- [ ] Mounting
+- [ ] (in progress) Mounting
   - [ ] Paths
   - [ ] Operations
+- [ ] User research reg. DX (e.g. Feathers Discord)
 - [ ] Pass through `axios` config and request overwrites (for authentication, headers, ...)
 - [ ] Tests
 - [ ] Documentation
