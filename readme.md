@@ -41,8 +41,7 @@ export default moduleExports;
 ```
 
 ```typescript
-// app.ts
-// Where you feathers app is initiliazed
+// app.ts (where you feathers app is initiliazed)
 
 import openApiHost from './open-api';
 
