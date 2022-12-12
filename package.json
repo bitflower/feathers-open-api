@@ -1,7 +1,23 @@
 {
   "name": "feathers-open-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Inspect OpenAPI-enabled APIs and mount them as Feathers services",
+  "author": "Matthias Max",
+  "license": "MIT",
+  "homepage": "https://github.com/bitflower/feathers-open-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitflower/feathers-open-api"
+  },
+  "keywords": [
+    "feathers",
+    "feathers.js",
+    "feathers-plugin",
+    "open-api",
+    "inspect",
+    "schema",
+    "json-schema"
+  ],
   "main": "dist/",
   "types": "dist/",
   "directories": {
@@ -10,7 +26,9 @@
   },
   "files": [
     "src/**",
-    "dist/**"
+    "dist/**",
+    "LICENSE",
+    "readme.md"
   ],
   "scripts": {
     "compile": "shx rm -rf dist/ && tsc --build --force",
@@ -18,8 +36,6 @@
     "start": "ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Matthias Max",
-  "license": "ISC",
   "dependencies": {
     "@feathersjs/errors": "^4.5.15",
     "@feathersjs/feathers": "^4.5.15",
