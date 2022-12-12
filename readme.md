@@ -251,7 +251,7 @@ Simply run `npm test` and all your tests in the `test/` directory will be run. I
 
 ## Help
 
-For more information on all the things you can do, visit [FeathersJS](http://docs.feathersjs.com) and [CASL](https://casl.js.org/v5/en/).
+For more information on integration and configuration details, visit [FeathersJS](http://docs.feathersjs.com) and [openapi-client-axios](https://github.com/anttiviljami/openapi-client-axios).
 
 ## License
 
